@@ -45,12 +45,12 @@ h1, h2 {
 }
 
 .accentTextSmall {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .accentTextBig {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -116,23 +116,17 @@ h1, h2 {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.dealText > p:first-child {
+    padding: 5px 10px 3px 15px;
 }
 
 .border {
     height: 50px;
     width: 1px;
     background-color: white;
-    margin: 0px 25px;
+    margin: 0px 15px;
 }
 
 .dealText p {
-    display: block;
     text-align: center;
 }
 
