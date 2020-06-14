@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hyundai Banner</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- assuming that there will be a header on a page -->
+    <header>
+        <h1>Innocean Tech Test</h1>
+        <h2>Alisa Kitkina</h2>
+    </header>
+
+
+    <main>
+        <div class="bannerContainer">
+            <div class="toLegalText">
+                <button aria-label="open legal text" onclick="openText()" class="open" id="open">Legal</button>
+            </div>
+            <div class="legalText">
+                <button aria-label="close legal text" onclick="closeText()" class="close" id="close"></button>
+                <p>Leasing offers available O.A.C. from Hyundai Financial Services based on new in-stock 2020 Kona 2.0L Essential FWD with an annual lease rate of 2.99%. Total lease obligation is $13,637. Weekly lease payment of $60 for a 48-month walk-away lease. Down payment of $1,195 and first monthly payment required. Trade-in value may be applied to down payment amount. Lease offer includes Delivery and Destination charges of $1,810, levies, and all applicable charges (excluding HST). Lease offer excludes registration, insurance, PPSA, license fees and dealer admin. fees of up to $499. Fees may vary by dealer. $0 security deposit on all models. 16,000 km allowance per year applies. Additional charge of $0.12/km.</p>
+            </div>
+            <div class="contentContainer">
+                <div class="background">
+                    <!-- assuming that this is an event, adding a link that would display potential info about it -->
+                    <a target="_blank" href="https://www.hyundaicanada.com/" aria-label="Hyundai's Sales Event" class="eventLogo"> <img src="assets/eventLogo.png" alt="Hyundai's Sales Event"></a>
+                    <img src="assets/bannerBackground.png" alt="Image of the Hyundai car on a road surrounded by endless fields">
+                </div>
+                <div class="content">
+                    <a target="_blank" href="https://www.hyundaicanada.com/" class="toDealership">Build your Kona</a>
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Hyundai logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
