@@ -41,6 +41,21 @@ h2 {
 
 h1, h2 {
     color: crimson;
+    text-shadow: 1px 1px black;
+}
+
+.accentTextSmall {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.accentTextBig {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.break {
+    display: block;
 }
 
 /* banner styling */
@@ -56,12 +71,12 @@ h1, h2 {
     border: 1px solid black;
 }
 
-.background {
+.mainContent {
     display: inline-block;
     z-index: -10;
 }
 
-.background img {
+.mainContent img {
     width: 100%;
 }
 
@@ -69,14 +84,56 @@ h1, h2 {
     z-index: 0;
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 5px;
     display: inline-block;
-    width: 60%;
+    width: 180px;
+    display: none;
 }
 
 .eventLogo img {
     max-height:100%; 
     max-width:100%;
+}
+
+.dealDescription {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 180px;
+    box-shadow: -3px 6px 10px rgba(0, 0, 0, 0.4); 
+    /* display: none; */
+}
+
+.dealDescription .name {
+    background-color: white;
+    font-size: 1.2rem;
+    color: #00326b;
+    padding: 5px 0px 5px 10px;
+}
+
+.dealText {
+    background-color: #00326b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dealText > p:first-child {
+}
+
+.border {
+    height: 50px;
+    width: 1px;
+    background-color: white;
+    margin: 0px 25px;
+}
+
+.dealText p {
+    display: block;
+    text-align: center;
 }
 
 .legalText {
@@ -157,7 +214,7 @@ h1, h2 {
     height: 250px;
 }
 
-.content {
+.bottomContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
